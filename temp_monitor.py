@@ -44,7 +44,7 @@ def count(monitor):
     """
     # TODO: Implementar
 
-    return len
+    return len(monitor["readings"])
 
     pass
 
