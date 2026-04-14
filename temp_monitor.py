@@ -87,6 +87,13 @@ def coldest_window(monitor, k):
     Retorna el promedio mas bajo de cualquier k lecturas consecutivas.
     """
     # TODO: Implementar
+    readings = monitor["readings"]
+    
+    if len(readings) < k or k <= 0:
+        return None
+
+    min_avg = float("inf")
+    
     pass
 
 
