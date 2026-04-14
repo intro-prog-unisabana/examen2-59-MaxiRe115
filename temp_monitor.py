@@ -26,11 +26,9 @@ def add_reading(monitor, temp):
     Retorna el diccionario modificado.
     """
     # TODO: Implementar
-    nuevo= {}
-    h = init()
-    nuevo[h] = temp
-    h[monitor] = nuevo
-    return nuevo
+    if len(monitor["readings"]) < monitor["max"]:
+        monitor["readings"].append(temp)
+    return monitor
         
         
 
