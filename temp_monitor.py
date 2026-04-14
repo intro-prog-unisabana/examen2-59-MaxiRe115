@@ -12,6 +12,12 @@ def init(max_readings):
     Crea y retorna un diccionario para almacenar hasta max_readings lecturas.
     """
     # TODO: Implementar
+    dic= {}
+    if len(dic) <= max_readings:
+        for i in max_readings:
+            dic[i] = ""
+        return dic
+
     pass
 
 
