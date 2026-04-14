@@ -12,7 +12,7 @@ def init(max_readings):
     Crea y retorna un diccionario para almacenar hasta max_readings lecturas.
     """
     # TODO: Implementar
-    dic= {"max": max_readings, "redings": []}
+    dic= {"max": max_readings}
 
     return dic
 
