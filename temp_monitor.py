@@ -57,6 +57,12 @@ def average_temp(monitor):
     Retorna la temperatura promedio de todas las lecturas.
     """
     # TODO: Implementar
+    sele = add_reading(monitor, temp=None)
+    for nota in sele.items():
+        if nota:
+            promedio = sum(nota.values()) / len(nota)
+    return promedio
+
     pass
 
 
