@@ -93,6 +93,13 @@ def coldest_window(monitor, k):
         return None
 
     min_avg = float("inf")
+    for i in range(len(readings) - k + 1):
+            window = readings[i:i+k]
+            avg = sum(window) / k
+            if avg < min_avg:
+                min_avg = avg
+
+    return min_avg
     
     pass
 
