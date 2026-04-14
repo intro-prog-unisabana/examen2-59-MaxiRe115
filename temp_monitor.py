@@ -76,7 +76,9 @@ def highest_temp(monitor):
     Retorna la temperatura mas alta de cualquier lectura.
     """
     # TODO: Implementar
-
+    if not monitor["readings"]:
+        return None
+    return max(monitor["readings"])
     pass
 
 
