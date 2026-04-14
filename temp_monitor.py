@@ -28,9 +28,9 @@ def add_reading(monitor, temp):
     """
     # TODO: Implementar
     nuevo= {}
-    n = input("Entra el numero de la lectura:\n")
-    nuevo[n] = temp
-    monitor[n] = nuevo
+    h = init()
+    nuevo[h] = temp
+    h[monitor] = nuevo
     return nuevo
         
         
@@ -58,7 +58,7 @@ def average_temp(monitor):
     """
     # TODO: Implementar
     sele = add_reading(monitor, temp=None)
-    for nota in sele.items():
+    for n, nota in sele.items():
         if nota:
             promedio = sum(nota.values()) / len(nota)
     return promedio
@@ -80,6 +80,7 @@ def highest_temp(monitor):
     Retorna la temperatura mas alta de cualquier lectura.
     """
     # TODO: Implementar
+
     pass
 
 
