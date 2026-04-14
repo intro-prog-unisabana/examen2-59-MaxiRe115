@@ -14,7 +14,7 @@ def init(max_readings):
     # TODO: Implementar
     dic= {}
     if len(dic) <= max_readings:
-        for i in max_readings:
+        for i in dic:
             dic[i] = ""
         return dic
 
@@ -27,6 +27,14 @@ def add_reading(monitor, temp):
     Retorna el diccionario modificado.
     """
     # TODO: Implementar
+    nuevo= {}
+    n = input("Entra el numero de la lectura:\n")
+    nuevo[n] = temp
+    monitor[n] = nuevo
+    return nuevo
+        
+        
+
     pass
 
 
@@ -35,6 +43,12 @@ def count(monitor):
     Retorna el numero de lecturas agregadas.
     """
     # TODO: Implementar
+    nue= add_reading()
+    if monitor == nue:
+        return ""
+    elif monitor < nue:
+        return len(nue) - len(monitor)
+
     pass
 
 
