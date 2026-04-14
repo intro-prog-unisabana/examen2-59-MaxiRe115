@@ -43,11 +43,8 @@ def count(monitor):
     Retorna el numero de lecturas agregadas.
     """
     # TODO: Implementar
-    nue= add_reading()
-    if monitor == nue:
-        return ""
-    elif monitor < nue:
-        return len(nue) - len(monitor)
+
+    return len
 
     pass
 
@@ -70,6 +67,7 @@ def format_readings(monitor):
     Formato: [t1, t2, t3, ..., tn]
     """
     # TODO: Implementar
+    return ", ".join(str(t) for t in monitor["readings"])
     pass
 
 
